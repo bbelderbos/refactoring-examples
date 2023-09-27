@@ -9,7 +9,7 @@ def test_empty_dict():
     assert process_data({}) is False
 
 
-def test_lte_10_value():
+def test_lt_10_value():
     assert process_data({"value": 5}) is False
 
 
