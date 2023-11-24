@@ -10,9 +10,9 @@ class Status(Enum):
 
 
 def update_user_status(user_id: int, status: Status):
-    if status == Status.ACTIVE:
+    if status is Status.ACTIVE:
         print("Activating user")
-    elif status == Status.INACTIVE:
+    elif status is Status.INACTIVE:
         print("Inactivating user")
     # etc
 
